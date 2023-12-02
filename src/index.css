@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow-x: hidden;
+  @apply transition-[.3s];
+}
+
+::-webkit-scrollbar{
+  @apply dark:bg-bgdark bg-bglight w-3 lg:w-4
+}
+
+::-webkit-scrollbar-thumb{
+  @apply bg-slate-500 rounded-full
+}
+
+html{
+  scroll-behavior: smooth;
+  
+}
+
+@media screen and (min-width: 1024px){
+  .bgImageXL{
+    background-size: 50%;
+    background-color: #f8fafc;
+  }
+}
+
+
+/* TAKENOTE: The CSS Colors will be displayed in tailwind.config.js*/
+.Hero{
+  font-family: 'Monda', sans-serif;
+  /* font-size: 35px;  change size if smaller screen */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.75px;
+  @apply text-lightModeContrast dark:text-darkModeText
+
+}
+
+.Heading{
+  /* text-align: right; */
+  font-family: 'Monda', sans-serif;
+  /* font-size: 42px; change size if smaller screen */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  @apply text-lightTextHeader dark:text-darkModeText
+}
+
+.Content{
+  /* text-align: right; */
+  font-family: 'Monda', sans-serif;
+  /* font-size: 18px; change size if smaller screen */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  @apply text-lightTextContent dark:text-darkModeTextContent
+}
+
+.headerNumber{
+  /* text-align: center; */
+  font-family: 'Monda', sans-serif;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+};
+
+.navlink{
+  text-align: center;
+  font-family: 'Monda', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.btn{
+  font-style: normal;
+  font-weight: 550;
+  line-height: 100%; /* 20px */
+  letter-spacing: 1px;
+}
+
+
+
+
+
