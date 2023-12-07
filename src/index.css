@@ -10,10 +10,10 @@
   padding: 0;
 }
 
-body{
+/* body{
   overflow-x: hidden;
   @apply transition-[.3s];
-}
+} */
 
 ::-webkit-scrollbar{
   @apply dark:bg-bgdark bg-bglight w-3 lg:w-4
@@ -55,8 +55,7 @@ html{
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 2.1px;
-  @apply text-lightTextHeader dark:text-darkModeText
+  @apply text-lightTextHeader dark:text-darkModeText md:tracking-[2.1px] tracking-normal
 }
 
 .Content{
@@ -66,8 +65,7 @@ html{
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.9px;
-  @apply text-lightTextContent dark:text-darkModeTextContent
+  @apply text-lightTextContent dark:text-darkModeTextContent md:tracking-[.9px] tracking-normal
 }
 
 .headerNumber{

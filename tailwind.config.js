@@ -20,10 +20,15 @@ export default {
         // => @media (min-width: 1024px) { ... }
         'xl': '1280px',
         // => @media (min-width: 1280px) { ... }
+        '425': '425px',
+        '375': '375px',
       },
       backgroundImage:{
         'bgImgLight': 'url(\'./src/assets/bg-lightmode.png\')',
         'bgImgDark': 'url(\'./src/assets/bg-darkmode.png\')',
+        'bgService1': 'url(\'./src/assets/UI&UX.jpg\')',
+        'bgService2': 'url(\'./src/assets/mockup.jpg\')',
+        'bgService3': 'url(\'./src/assets/WebDev.jpg\')',
       },
       backgroundColor:{
         bglight: '#F1F5F9', 
@@ -44,7 +49,7 @@ export default {
         lightNumber: '#71717a',
         cyan1: '#22D3EE',
         cyan2: '#06B6D4',
-        bgFormColor1: '#79C5C5',
+        bgFormColor1: '#475569',
         bgFormColor2: '#CBD5E1',
         lightModeContrast: '#334155',
         darkModeContrast: '#CDB5E1',
@@ -52,7 +57,7 @@ export default {
     },
   },
   plugins: [
-
+    require('@tailwindcss/forms'),
   ],
 }
 
