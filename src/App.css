@@ -87,3 +87,72 @@
   content: "";
   position: absolute;
 }
+
+
+.bn4:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ecfeff,
+    #a5f3fc,
+    #67e8f9,
+    #22d3ee,
+    #06b6d4,
+    #0891b2,
+    #0e7490,
+    #ecfeff,
+    #a5f3fc,
+    #67e8f9,
+    #06b6d4,
+    #0891b2,
+    #ecfeff,
+    #ecfeff
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(0px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  @apply rounded-full
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn4:hover:before {
+  opacity: 1;
+  @apply rounded-full
+}
+
+.bn4:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+}
+
+.profilePic{
+  position: relative;
+  top: 0px;
+  left: 0px;
+} 
+
+.profilePic::before{
+  content: "";
+  position: absolute;
+  top: 0;
+}

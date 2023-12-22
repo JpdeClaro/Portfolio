@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <div className={`${darkMode ? 'dark' : '' } font-[Monda] bg-bglight w-full h-full`}>
-      <div className="overflow-x-hidden bgImageXL lg:bg-bgImgLight lg:dark:bg-bgImgDark bg-no-repeat lg:mix-blend-pluslighter bg-fixed dark:bg-bgdark">
+      <div className="overflow-x-hidden bg-fixed bg-no-repeat bgImageXL lg:bg-bgImgLight lg:dark:bg-bgImgDark lg:mix-blend-pluslighter dark:bg-bgdark">
         <Hero darkMode={darkMode} 
           toggleDarkMode={toggleDarkMode}
         />

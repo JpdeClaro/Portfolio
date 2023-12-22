@@ -409,7 +409,7 @@ const Header = () => {
                 className="text-cyan1 xl:text-[30px] md:text-[24px] text-[20px]"
                 icon="mingcute:web-fill"
               ></Icon>
-              E - COMMERSE WEBSITE
+              TODO-LIST-APP
             </p>
           </div>
 
@@ -564,7 +564,7 @@ const Header = () => {
               <a href="#">Resume</a>
             </button>
             <button type="submit" className="transition-[.3s] hover:animate-none  drop-shadow-sm active:scale-[.95] hover:bg-slate-400 text-darkModeText rounded-full w-[100px] h-9 lg:w-[120px] lg:h-10 lg:text-[19px]  md:w-[135px] md:h-10 md:text-[17px] bg-cyan2 dark:border-cyan1">
-              Submit
+              Send
             </button>
             <span className="animate-ping  w-6 h-6 rounded-full bg-cyan1 absolute right-[-2px]"></span>
           </div>

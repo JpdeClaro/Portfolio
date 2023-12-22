@@ -22,7 +22,10 @@ export default {
         // => @media (min-width: 1280px) { ... }
         '425': '425px',
         '375': '375px',
-      },
+        '1175': '1175px',
+        '1100': '1100px',
+        '1440': '1440px',
+        '1025': '1025px',      },
       backgroundImage:{
         'bgImgLight': 'url(\'./src/assets/bg-lightmode.png\')',
         'bgImgDark': 'url(\'./src/assets/bg-darkmode.png\')',
