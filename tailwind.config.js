@@ -29,11 +29,11 @@ export default {
         1403: "1403px",
       },
       backgroundImage: {
-        bgImgLight: "url('./public/bg-lightmode.png')",
-        bgImgDark: "url('./public/bg-darkmode.png')",
-        bgService1: "url('./public/UI&UX.jpg')",
-        bgService2: "url('./public/mockup.jpg')",
-        bgService3: "url('./public/WebDev.jpg')",
+        bgImgLight: "url('/bg-lightmode.png')",
+        bgImgDark: "url('/bg-darkmode.png')",
+        bgService1: "url('/UI&UX.jpg')",
+        bgService2: "url('/mockup.jpg')",
+        bgService3: "url('/WebDev.jpg')",
       },
       backgroundColor: {
         bglight: "#F1F5F9",

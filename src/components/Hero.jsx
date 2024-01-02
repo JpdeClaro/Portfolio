@@ -163,7 +163,7 @@ const Hero = ({ darkMode, toggleDarkMode }) => {
             data-aos-duration="1000"
           >
             <button className="bn4 transition-[.3s] drop-shadow-sm active:scale-[.95] hover:bg-slate-400 text-lightModeContrast dark:text-darkModeText rounded-full border-[3px] w-[100px] h-9 lg:w-[150px] lg:h-12 lg:border-[4px] lg:text-[19px]  md:w-[135px] md:h-10 md:text-[17px] border-cyan2 dark:border-cyan1">
-              <a href="">Resume</a>
+              <a href="https://drive.google.com/file/d/1WSG8ijPgFMJUEiCGNCdDE71Bnoc6qYVD/view?usp=drive_link" target="#">Resume</a>
             </button>
             <button className="bn4 transition-[.3s] hover:animate-none  drop-shadow-sm active:scale-[.95] hover:bg-slate-400 text-darkModeText rounded-full w-[100px] h-9 lg:w-[150px] lg:h-12 lg:text-[19px]  md:w-[135px] md:h-10 md:text-[17px] bg-cyan2 dark:border-cyan1">
               <a href="#">Hire me</a>

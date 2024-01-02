@@ -75,7 +75,7 @@ const ContactForm = () => {
         data-aos="zoom-in"
         data-aos-delay="1100"
         >
-          <a href="#">Resume</a>
+        <a href="https://drive.google.com/file/d/1WSG8ijPgFMJUEiCGNCdDE71Bnoc6qYVD/view?usp=drive_link" target="#">Resume</a>
         </button>
         <button
         
