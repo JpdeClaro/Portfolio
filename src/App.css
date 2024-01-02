@@ -1,31 +1,29 @@
-
-
-.btn-hover{
-    @apply relative;
-}
-
-.btn-hover::after{
-    @apply content-[''] bg-cyan1 h-[5px] w-[0%] left-[0%] -bottom-[6px] absolute rounded-xl duration-300;
-}
-
-.btn-hover:hover::after{
-    @apply w-[100%];
-}
-
-.btn-hover1{
+.btn-hover {
   @apply relative;
 }
 
-.btn-hover1::after{
+.btn-hover::after {
   @apply content-[''] bg-cyan1 h-[5px] w-[0%] left-[0%] -bottom-[6px] absolute rounded-xl duration-300;
 }
 
-.btn-hover1:hover::after{
+.btn-hover:hover::after {
   @apply w-[100%];
 }
 
-.navlink{
-  @apply active:scale-[.95]
+.btn-hover1 {
+  @apply relative;
+}
+
+.btn-hover1::after {
+  @apply content-[''] bg-cyan1 h-[5px] w-[0%] left-[0%] -bottom-[6px] absolute rounded-xl duration-300;
+}
+
+.btn-hover1:hover::after {
+  @apply w-[100%];
+}
+
+.navlink {
+  @apply active:scale-[.95];
 }
 
 .bn5 {
@@ -58,7 +56,7 @@
   left: -2px;
   background-size: 400%;
   z-index: -1;
-  filter: blur(1px);
+  filter: blur(0px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   animation: glowingbn5 20s linear infinite;
@@ -87,7 +85,6 @@
   content: "";
   position: absolute;
 }
-
 
 .bn4:before {
   content: "";
@@ -119,7 +116,7 @@
   animation: glowingbn5 20s linear infinite;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  @apply rounded-full
+  @apply rounded-full;
 }
 
 @keyframes glowingbn5 {
@@ -136,7 +133,7 @@
 
 .bn4:hover:before {
   opacity: 1;
-  @apply rounded-full
+  @apply rounded-full;
 }
 
 .bn4:after {
@@ -145,14 +142,26 @@
   position: absolute;
 }
 
-.profilePic{
+.profilePic {
   position: relative;
   top: 0px;
   left: 0px;
-} 
+}
 
-.profilePic::before{
+.profilePic::before {
   content: "";
   position: absolute;
   top: 0;
+} 
+
+
+.Timeline {
+  @apply  lg:block  border-r-[5px] lg:border-r-[4px] fill-[#CBD5E1] dark:border-lightModeContrast
+}
+
+.Timeline-Dot{
+  @apply  lg:block  absolute bg-[#CBD5E1] dark:bg-lightModeContrast h-6 w-6 rounded-full right-[-54px] top-6
+}
+.Timeline-Dot1{
+  @apply  hidden lg:block absolute bg-[#CBD5E1] dark:bg-lightModeContrast h-6 w-6 rounded-full right-[-54px] top-6
 }

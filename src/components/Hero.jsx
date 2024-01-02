@@ -40,125 +40,145 @@ const Hero = ({ darkMode, toggleDarkMode }) => {
 
   const [menu, setMenu] = useState(true);
 
+  console.log("Component rendered");
+
   return (
-    <div className=" lg:bg-none lg:dark:bg-none bg-bgImgLight lg:dark:bg-[none] dark:bg-bgImgDark bg-no-repeat bg-fixed pt-[80px] md:pt-[100px] lg:pt-[70px] xl:mb-[300px]  md:px-[66px] px-8 pb-[80px]">
-      
-      <div className="relative flex flex-wrap justify-center">
+    <div className=" lg:bg-none lg:dark:bg-none bg-bgImgLight lg:dark:bg-[none] dark:bg-bgImgDark bg-no-repeat bg-fixed lg:pt-10 xl:pt-5 pt-20 xl:mb-[300px]  md:px-[66px] px-8 pb-[80px]">
+      <div className="relative flex flex-wrap justify-center ">
         {/* ========NAVBAR=========== */}
-        <div id="" className="hidden lg:block">
+        <div
+          id=""
+          className="hidden lg:block"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           {darkMode ? (
             <img className="lg:w-[100%] " src={Navbar} alt="Navbar" />
           ) : (
             <img className="lg:w-[100%]" src={Navbar2} alt="Navbar2" />
           )}
 
-          
+          <div className="transition-[.3s] absolute xl:top-[124px] xl:right-6 right-4 top-[90px] 1100:top-[100px] 1175:top-[110px] 1240:top-[116px] 1240:right-6 1330:right-7 ">
+            <SunMoonBtn />
+          </div>
         </div>
         {/* ============md-sm:Profile/Logo========== */}
         <div
-            id="Home"
-            className="lg:hidden 
+          id="Home"
+          className="lg:hidden 
             md:mb-10 mb-5
             md:w-[230px] w-[200px] 
             border-[10px] border-[rgb(100,116,139)] dark:border-lightModeContrast  lg:border-none rounded-full shadow-sm shadow-black dark:shadow-none
             "
-          >
-            <img
-              className="rounded-full"
-              src={ProfilePic}
-              alt="Profile Picture"
-            />
+          data-aos="zoom-in"
+          data-aos-delay="1000"
+        >
+          <img
+            className="rounded-full"
+            src={ProfilePic}
+            alt="Profile Picture"
+          />
         </div>
-        <div className="absolute top-0 bg-green-500 left-1/2">
-          <div className="relative">
+        {/* LG-XL Navlink*/}
+        <div
+          className="absolute top-0 bg-green-500 left-1/2"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <div className="relative cursor-pointer">
             <ScrollLink
               to="Skills"
-              offset={-123}
+              offset={-100}
               smooth={true}
-              duration={500}
-              className="Hero btn-hover1 lg:text-[18px]  text-lightModeContrast dark:text-darkModeContrast hidden lg:block navlink absolute xl:top-[80px] lg:top-[70px] -left-8"
+              // duration={500}
+              className="Hero transition-[.3s] btn-hover1 lg:text-[18px]  text-lightModeContrast dark:text-darkModeContrast hidden lg:block navlink absolute xl:top-[80px] lg:top-[70px] -left-8"
             >
               Skills
             </ScrollLink>
 
             <ScrollLink
               to="Contact"
-              offset={-123}
+              offset={-100}
               smooth={true}
-              duration={500}
-              className="Hero btn-hover1 lg:text-[18px]  text-lightModeContrast dark:text-darkModeContrast hidden lg:block navlink absolute xl:top-[80px] lg:top-[70px] lg:-right-[280px] 1175:-right-[320px] xl:-right-[350px]"
+              // duration={500}
+              className="Hero transition-[.3s] btn-hover1 lg:text-[18px]  text-lightModeContrast dark:text-darkModeContrast hidden lg:block navlink absolute xl:top-[80px] lg:top-[70px] lg:-right-[280px] 1175:-right-[320px] xl:-right-[350px]"
             >
               Contact
             </ScrollLink>
 
             <ScrollLink
               to="Projects"
-              offset={-123}
+              offset={-100}
               smooth={true}
-              duration={500}
-              className="Hero btn-hover1 lg:text-[18px]  text-lightModeContrast dark:text-darkModeContrast hidden lg:block navlink absolute lg:top-[130px] lg:-left-[180px] 1175:top-[160px] xl:top-[180px] xl:-left-[210px]"
+              // duration={500}
+              className="Hero transition-[.3s] btn-hover1 lg:text-[18px]  text-lightModeContrast dark:text-darkModeContrast hidden lg:block navlink absolute lg:top-[130px] lg:-left-[180px] 1175:top-[160px] xl:top-[180px] xl:-left-[210px]"
             >
               Projects
             </ScrollLink>
 
             <ScrollLink
               to="About"
-              offset={-123}
+              offset={-100}
               smooth={true}
-              duration={500}
-              className="Hero btn-hover1 lg:text-[18px]  text-lightModeContrast dark:text-darkModeContrast hidden lg:block navlink absolute lg:top-[130px] lg:-right-[180px] 1175:top-[160px] xl:top-[180px] xl:-right-[200px] "
+              // duration={500}
+              className="Hero transition-[.3s] btn-hover1 lg:text-[18px]  text-lightModeContrast dark:text-darkModeContrast hidden lg:block navlink absolute lg:top-[130px] lg:-right-[180px] 1175:top-[160px] xl:top-[180px] xl:-right-[200px] "
             >
               About me
             </ScrollLink>
           </div>
-          
         </div>
 
-          {/* =======Dark/LightMODE Btns======== */}
+        {/* =======Dark/LightMODE Btns======== */}
 
-          <div className="relative">
-            <div className="xl:block hidden darkMode-btn absolute lg:right-4 lg:top-[92px]  xl:right-7 xl:top-[125px]">
-              <SunMoonBtn />
-            </div>
-          </div>
-          
-          <div className="xl:hidden lg:block hidden darkMode-btn absolute lg:right-4 lg:top-[92px] 1175:top-[110px] 1175:right-6">
+        {/* <div className="relative">
+          <div className="xl:block hidden darkMode-btn absolute lg:right-4 lg:top-[92px]  xl:right-7 xl:top-[125px]">
             <SunMoonBtn />
           </div>
+        </div>
 
-          {/* ==========CTA========== */}
+        <div className="xl:hidden lg:block hidden darkMode-btn absolute lg:right-4 lg:top-[92px] 1175:top-[110px] 1175:right-6">
+          <SunMoonBtn />
+        </div> */}
+
+        {/* ==========CTA========== */}
         <div className="xl:top-[300px] top-[260px] lg:absolute">
-          <div className="Hero text-[17px] md:text-[30px] xl:mx-[220px] xl:pl-[100px] 1175:mx-[160px] 1100:mx-[130px] lg:mx-[100px] lg:pl-[80px] xl:text-[35px] lg:text-[32px] justify-center text-justify drop-shadow-md dark:drop-shadow-none ">
-              <span className="lg:border-t-[5px] border-t-2 border-cyan1 rounded-t-sm">
-                He
-              </span>
-              llo!, <br /> I`m{" "}
-              <span className="text-cyan2 dark:text-cyan1">
-                John Patrick DeClaro{" "}
-              </span>
-              a Web Developer with a passion in Front-End and UI/UX.
-            </div>
-            {/* ========CTA Buttons======== */}
-            <div className="btn flex justify-center gap-5 relative xl:mt-[50px] lg:mt-[150px] mt-[50px]">
-              <button className="bn4 transition-[.3s] drop-shadow-sm active:scale-[.95] hover:bg-slate-400 text-lightModeContrast dark:text-darkModeText rounded-full border-[3px] w-[100px] h-9 lg:w-[150px] lg:h-12 lg:border-[4px] lg:text-[19px]  md:w-[135px] md:h-10 md:text-[17px] border-cyan2 dark:border-cyan1">
-                <a href="#">Resume</a>
-              </button>
-              <button className="bn4 transition-[.3s] hover:animate-none  drop-shadow-sm active:scale-[.95] hover:bg-slate-400 text-darkModeText rounded-full w-[100px] h-9 lg:w-[150px] lg:h-12 lg:text-[19px]  md:w-[135px] md:h-10 md:text-[17px] bg-cyan2 dark:border-cyan1">
-                <a href="#">Hire me</a>
-                <span className="absolute top-0 w-6 h-6 rounded-full animate-ping bg-cyan1 "></span>
-              </button>
-              
-            </div>
-        </div>
-        
-        </div>
-          {/* =======Dark/LightMODE Btns======== */}
-          <div className="absolute lg:hidden darkMode-btn top-4 right-4 md:top-7 md:right-10 ">
-            <SunMoonBtn />
+          <div
+            className="Hero transition-[.3s] text-[17px] md:text-[30px] xl:mx-[220px] xl:pl-[100px] 1175:mx-[160px] 1100:mx-[130px] lg:mx-[100px] lg:pl-[80px] xl:text-[35px] lg:text-[32px] justify-center text-justify drop-shadow-md dark:drop-shadow-none "
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <span className="lg:border-t-[5px] border-t-2 border-cyan1 rounded-t-sm">
+              He
+            </span>
+            llo!, <br /> I`m{" "}
+            <span className="text-cyan2 dark:text-cyan1">
+              John Patrick DeClaro{" "}
+            </span>
+            a Web Developer with a passion in Front-End and UI/UX.
           </div>
-        
-        {/* =========SM-MD NavBurger Menu======== */}
-        <div className="navbar">
+          {/* ========CTA Buttons======== */}
+          <div
+            className="btn flex justify-center gap-5 relative xl:mt-[50px] lg:mt-[60px] mt-[50px]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <button className="bn4 transition-[.3s] drop-shadow-sm active:scale-[.95] hover:bg-slate-400 text-lightModeContrast dark:text-darkModeText rounded-full border-[3px] w-[100px] h-9 lg:w-[150px] lg:h-12 lg:border-[4px] lg:text-[19px]  md:w-[135px] md:h-10 md:text-[17px] border-cyan2 dark:border-cyan1">
+              <a href="">Resume</a>
+            </button>
+            <button className="bn4 transition-[.3s] hover:animate-none  drop-shadow-sm active:scale-[.95] hover:bg-slate-400 text-darkModeText rounded-full w-[100px] h-9 lg:w-[150px] lg:h-12 lg:text-[19px]  md:w-[135px] md:h-10 md:text-[17px] bg-cyan2 dark:border-cyan1">
+              <a href="#">Hire me</a>
+              <span className="absolute top-0 right-0 w-6 h-6 rounded-full animate-ping bg-cyan1 "></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* =======Dark/LightMODE Btns======== */}
+      <div className="absolute lg:hidden darkMode-btn top-4 right-4 md:top-7 md:right-10 ">
+        <SunMoonBtn />
+      </div>
+
+      {/* =========SM-MD NavBurger Menu======== */}
+      <div className="navbar">
         <div className="menu-btn lg:hidden">
           {/* =====NAVMENU btn============= */}
           <button onClick={() => setMenu(!menu)}>
@@ -221,9 +241,7 @@ const Hero = ({ darkMode, toggleDarkMode }) => {
             </button>
           </ScrollLink>
         </div>
-
       </div>
-      
     </div>
   );
 };
