@@ -100,7 +100,7 @@ const Hero = ({ darkMode, toggleDarkMode }) => {
               to="Contact"
               offset={-100}
               smooth={true}
-              // duration={500}
+              duration={1000}
               className="Hero transition-[.3s] btn-hover1 lg:text-[18px]  text-lightModeContrast dark:text-darkModeContrast hidden lg:block navlink absolute xl:top-[80px] lg:top-[70px] lg:-right-[280px] 1175:-right-[320px] xl:-right-[350px]"
             >
               Contact
@@ -120,7 +120,7 @@ const Hero = ({ darkMode, toggleDarkMode }) => {
               to="About"
               offset={-100}
               smooth={true}
-              // duration={500}
+              duration={1000}
               className="Hero transition-[.3s] btn-hover1 lg:text-[18px]  text-lightModeContrast dark:text-darkModeContrast hidden lg:block navlink absolute lg:top-[130px] lg:-right-[180px] 1175:top-[160px] xl:top-[180px] xl:-right-[200px] "
             >
               About me
