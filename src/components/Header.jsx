@@ -325,7 +325,7 @@ const Header = () => {
       <div className="lg:px-0 md:px-[25px] px-2 xl:mt-[150px] lg:mt-[41px]">
         <div className="grid lg:grid-cols-none grid-cols-none md:grid-cols-3 xl:gap-[25px] gap-[20px] mb-[20px] relative overflow-hidden cursor-pointer drop-shadow-md">
           <div
-            className="flex gap-2 py-10 bg-bgService1 bg-cover bg-center hover:scale-[1.2] ease-in-out transition-transform rounded-sm justify-center"
+            className="flex gap-2 py-10 bg-bgService1 bg-cover bg-center hover:scale-[1.3] ease-in-out transition-transform rounded-sm justify-center"
             data-aos="fade-right"
             data-aos-delay="1000"
           >
@@ -386,6 +386,7 @@ const Header = () => {
               <p className="Content xl:text-[18px] lg:text-[15px] text-[13px]">
                 HTML
               </p>
+              <span className="absolute top-0 right-0 w-6 h-6 rounded-full animate-ping bg-cyan1"></span>        
             </div>
             <div
               className="flex gap-3 items-center pl-5 bn5 drop-shadow-sm bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
