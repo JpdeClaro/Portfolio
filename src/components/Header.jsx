@@ -386,7 +386,7 @@ const Header = () => {
               <p className="Content xl:text-[18px] lg:text-[15px] text-[13px]">
                 HTML
               </p>
-              <span className="absolute top-0 right-0 w-6 h-6 rounded-full animate-ping bg-cyan1"></span>        
+              <span className="absolute top-0 right-0 w-6 h-6 rounded-full animate-ping bg-cyan1"></span>
             </div>
             <div
               className="flex gap-3 items-center pl-5 bn5 drop-shadow-md bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
@@ -553,10 +553,13 @@ const Header = () => {
               data-aos="fade-left"
               data-aos-delay="1000"
             >
-              <div className="Timeline-Dot1"
-              data-aos="fade-up"
-              data-aos-delay="1000"
-              >{/* {Timeline-Dot} */}</div>
+              <div
+                className="Timeline-Dot1"
+                data-aos="fade-up"
+                data-aos-delay="1000"
+              >
+                {/* {Timeline-Dot} */}
+              </div>
               <p className="Heading xl:mb-[30px] lg:mb-[25px] xl:pl-[50px] xl:text-[32px] lg:text-[30px] text-[20px]">
                 <span className="xl:border-t-[6px] lg:border-t-4 border-t-2 border-cyan1 rounded-t-sm">
                   War
@@ -617,7 +620,11 @@ const Header = () => {
           {divProject1.map((content, index) => (
             <DivComponent key={index} content={content} />
           ))}
-          <img className="mt-5 rounded-sm" src={OrganizeMe} alt="OrganizeMe" />
+          <img
+            className="mt-5 rounded-sm"
+            src={OrganizeMe}
+            alt="OrganizeMe"
+          />
         </div>
 
         {/* Header */}
@@ -649,6 +656,7 @@ const Header = () => {
             <DivComponent key={index} content={content} />
           ))}
           <img
+            href=""
             className="mt-5 rounded-sm"
             src={WardrobeManila}
             alt="Wardrobe Manila"
@@ -742,16 +750,16 @@ const Header = () => {
                 data-aos="fade-up"
                 data-aos-delay="1000"
               >
-                <a href="">
+                <a href="https://www.facebook.com/jpdeclarodev/">
                   <Icon
                     className=" dark:text-cyan1 hover:text-cyan1 dark:hover:text-slate-100"
                     icon="mdi:facebook"
                   ></Icon>
                 </a>
-                <a href="">
+                <a href="https://codepen.io/John-Patrick-DeClaro">
                   <Icon
                     className=" dark:text-cyan1 hover:text-cyan1 dark:hover:text-slate-100"
-                    icon="ri:messenger-fill"
+                    icon="fa-brands:codepen"
                   ></Icon>
                 </a>
                 <a href="">
@@ -760,13 +768,13 @@ const Header = () => {
                     icon="basil:instagram-solid"
                   ></Icon>
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/jpdeclaro/">
                   <Icon
                     className=" dark:text-cyan1 hover:text-cyan1 dark:hover:text-slate-100"
                     icon="grommet-icons:linkedin-option"
                   ></Icon>
                 </a>
-                <a href="">
+                <a href="https://github.com/JpdeClaro">
                   <Icon
                     className=" dark:text-cyan1 hover:text-cyan1 dark:hover:text-slate-100"
                     icon="mdi:github"
@@ -783,52 +791,53 @@ const Header = () => {
         <ContactForm />
 
         {/* FOLLOW UPS */}
-        <div className="block lg:hidden">
-          <p
-            className="Heading pt-10  xl:mb-[30px] lg:mb-[25px] xl:pl-[50px] xl:text-[30px] lg:text-[20px] text-[20px]"
-            data-aos="fade-up"
-            data-aos-delay="1000"
-          >
+        <div
+          className="block lg:hidden"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        >
+          <p className="Heading pt-10  xl:mb-[30px] lg:mb-[25px] xl:pl-[50px] xl:text-[30px] lg:text-[20px] text-[20px]">
             <span className="xl:border-t-[6px] lg:border-t-4 border-t-2 border-cyan1 rounded-t-sm">
               Fol
             </span>
             low me on:
           </p>
-          <div
-            className="Hero drop-shadow-md flex justify-center md:gap-5 gap-2 xl:text-[40px] md:text-[30px] text-[20px]"
-            data-aos="fade-up"
-            data-aos-delay="1000"
-          >
-            <a href="">
-              <Icon className="dark:text-cyan1" icon="mdi:facebook"></Icon>
-            </a>
-            <a href="">
-              <Icon className="dark:text-cyan1" icon="ri:messenger-fill"></Icon>
-            </a>
-            <a href="">
+          <div className="Hero drop-shadow-md flex justify-center md:gap-5 gap-2 xl:text-[40px] md:text-[30px] text-[20px]">
+            <a href="https://www.facebook.com/jpdeclarodev/">
               <Icon
-                className="dark:text-cyan1"
-                icon="basil:instagram-solid"
+                className="dark:text-cyan1 hover:text-cyan1 dark:hover:text-slate-100"
+                icon="mdi:facebook"
+              ></Icon>
+            </a>
+            <a href="https://codepen.io/John-Patrick-DeClaro">
+              <Icon
+                className="dark:text-cyan1 hover:text-cyan1 dark:hover:text-slate-100"
+                icon="fa-brands:codepen"
               ></Icon>
             </a>
             <a href="">
+              <Icon
+                className="dark:text-cyan1 hover:text-cyan1 dark:hover:text-slate-100"
+                icon="basil:instagram-solid"
+              ></Icon>
+            </a>
+            <a href="https://www.linkedin.com/in/jpdeclaro/">
               <Icon
                 className="dark:text-cyan1"
                 icon="grommet-icons:linkedin-option"
               ></Icon>
             </a>
-            <a href="">
-              <Icon className="dark:text-cyan1" icon="mdi:github"></Icon>
+            <a href="https://github.com/JpdeClaro">
+              <Icon
+                className="dark:text-cyan1 hover:text-cyan1 dark:hover:text-slate-100"
+                icon="mdi:github"
+              ></Icon>
             </a>
           </div>
         </div>
       </div>
-      <span
-        className="px-2 mb-5 text-center content dark:text-slate-100"
-        data-aos="fade-up"
-        data-aos-delay="2000"
-      >
-        ©2024 Jp's Porfolio
+      <span className="px-2 mt-5 mb-10 text-sm text-center content dark:text-slate-100">
+        ©2024 JpDeClaroDevPorfolio
       </span>
     </div>
   );
