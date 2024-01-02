@@ -375,7 +375,7 @@ const Header = () => {
           </div>
           <div className="grid md:grid-cols-2 md:grid-rows-4 gap-[20px] rounded-sm text-justify lg:px-0 p-[20px] xl:mt-[126px] lg:mt-[60px]">
             <div
-              className="flex gap-3 items-center pl-5 bn5 drop-shadow-sm bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
+              className="flex gap-3 items-center pl-5 bn5 drop-shadow-md bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
               data-aos="zoom-in-up"
               data-aos-delay="1000"
             >
@@ -389,7 +389,7 @@ const Header = () => {
               <span className="absolute top-0 right-0 w-6 h-6 rounded-full animate-ping bg-cyan1"></span>        
             </div>
             <div
-              className="flex gap-3 items-center pl-5 bn5 drop-shadow-sm bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
+              className="flex gap-3 items-center pl-5 bn5 drop-shadow-md bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
               data-aos="zoom-in-up"
               data-aos-delay="1000"
             >
@@ -402,7 +402,7 @@ const Header = () => {
               </p>
             </div>
             <div
-              className="flex gap-3 items-center pl-5 bn5 drop-shadow-sm bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
+              className="flex gap-3 items-center pl-5 bn5 drop-shadow-md bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
               data-aos="zoom-in-up"
               data-aos-delay="1000"
             >
@@ -415,7 +415,7 @@ const Header = () => {
               </p>
             </div>
             <div
-              className="flex gap-3 items-center pl-5 bn5 drop-shadow-sm bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
+              className="flex gap-3 items-center pl-5 bn5 drop-shadow-md bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
               data-aos="zoom-in-up"
               data-aos-delay="1000"
             >
@@ -428,7 +428,7 @@ const Header = () => {
               </p>
             </div>
             <div
-              className="flex gap-3 items-center pl-5 bn5 drop-shadow-sm bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
+              className="flex gap-3 items-center pl-5 bn5 drop-shadow-md bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
               data-aos="zoom-in-up"
               data-aos-delay="1000"
             >
@@ -441,7 +441,7 @@ const Header = () => {
               </p>
             </div>
             <div
-              className="flex gap-3 items-center pl-5 bn5 drop-shadow-sm bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
+              className="flex gap-3 items-center pl-5 bn5 drop-shadow-md bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
               data-aos="zoom-in-up"
               data-aos-delay="1000"
             >
@@ -454,7 +454,7 @@ const Header = () => {
               </p>
             </div>
             <div
-              className="flex gap-3 items-center pl-5 bn5 drop-shadow-sm bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
+              className="flex gap-3 items-center pl-5 bn5 drop-shadow-md bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
               data-aos="zoom-in-up"
               data-aos-delay="1000"
             >
@@ -467,7 +467,7 @@ const Header = () => {
               </p>
             </div>
             <div
-              className="flex gap-3 items-center pl-5 bn5 drop-shadow-sm bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
+              className="flex gap-3 items-center pl-5 bn5 drop-shadow-md bg-slate-100 dark:bg-slate-800 p-[20px] lg:p-[10px] xl:p-[20px]"
               data-aos="zoom-in-up"
               data-aos-delay="1000"
             >
