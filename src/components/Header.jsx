@@ -620,11 +620,7 @@ const Header = () => {
           {divProject1.map((content, index) => (
             <DivComponent key={index} content={content} />
           ))}
-          <img
-            className="mt-5 rounded-sm"
-            src={OrganizeMe}
-            alt="OrganizeMe"
-          />
+          <img className="mt-5 rounded-sm" src={OrganizeMe} alt="OrganizeMe" />
         </div>
 
         {/* Header */}
@@ -766,7 +762,7 @@ const Header = () => {
                   <Icon
                     className=" dark:text-cyan1 hover:text-cyan1 dark:hover:text-slate-100"
                     icon="basil:instagram-solid"
-                  ></Icon>
+                  ></Icon>  
                 </a>
                 <a href="https://www.linkedin.com/in/jpdeclaro/">
                   <Icon
@@ -787,7 +783,7 @@ const Header = () => {
       </div>
 
       {/* CONTENT */}
-      <div className="lg:mt-[150px] xl:mt-[200px] mt-7 lg:px-0 md:px-[25px] px-2 lg:mb-0 mb-10">
+      <div id="ContactForm" className="lg:mt-[150px] xl:mt-[200px] mt-7 lg:px-0 md:px-[25px] px-2 lg:mb-0 mb-10">
         <ContactForm />
 
         {/* FOLLOW UPS */}

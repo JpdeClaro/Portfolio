@@ -165,10 +165,12 @@ const Hero = ({ darkMode, toggleDarkMode }) => {
             <button className="bn4 transition-[.3s] drop-shadow-sm active:scale-[.95] hover:bg-slate-400 text-lightModeContrast dark:text-darkModeText rounded-full border-[3px] w-[100px] h-9 lg:w-[150px] lg:h-12 lg:border-[4px] lg:text-[19px]  md:w-[135px] md:h-10 md:text-[17px] border-cyan2 dark:border-cyan1">
               <a href="https://drive.google.com/file/d/1WSG8ijPgFMJUEiCGNCdDE71Bnoc6qYVD/view?usp=drive_link" target="#">Resume</a>
             </button>
-            <button className="bn4 transition-[.3s] hover:animate-none  drop-shadow-sm active:scale-[.95] hover:bg-slate-400 text-darkModeText rounded-full w-[100px] h-9 lg:w-[150px] lg:h-12 lg:text-[19px]  md:w-[135px] md:h-10 md:text-[17px] bg-cyan2 dark:border-cyan1">
-              <a href="#">Hire me</a>
-              <span className="absolute top-0 right-0 w-6 h-6 rounded-full animate-ping bg-cyan1 "></span>
-            </button>
+            <ScrollLink to="ContactForm">
+              <button className="bn4 transition-[.3s] hover:animate-none  drop-shadow-sm active:scale-[.95] hover:bg-slate-400 text-darkModeText rounded-full w-[100px] h-9 lg:w-[150px] lg:h-12 lg:text-[19px]  md:w-[135px] md:h-10 md:text-[17px] bg-cyan2 dark:border-cyan1">
+                <span>Hire me</span>
+                <span className="absolute top-0 right-0 w-6 h-6 rounded-full animate-ping bg-cyan1"></span>
+              </button>
+            </ScrollLink>
           </div>
         </div>
       </div>
